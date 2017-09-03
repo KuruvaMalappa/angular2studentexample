@@ -1,0 +1,19 @@
+<h1>Observable</h1>
+<ul>
+  <li *ngFor="let s of studentsListObservable | async">
+    <app-student [student]="s"></app-student>
+  </li>
+</ul> 
+<h1>Promise</h1>
+<ul>
+  <li *ngFor="let s of studentsListPromise | async">
+    <app-student [student]="s"></app-student>
+  </li>
+</ul> 
+
+<h1>Normal</h1>
+<ul>
+  <li *ngFor="let s of studentsList">
+    <app-student [student]="s"></app-student>
+  </li>
+</ul>
